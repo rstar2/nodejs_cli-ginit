@@ -1,0 +1,1 @@
+# Create a simple NodeJS CLI program following the tutorial from https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/

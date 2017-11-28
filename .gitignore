@@ -1,0 +1,5 @@
+# skip the npm installs
+/node_modules
+
+# skip the VSCode 
+/.vscode
