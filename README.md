@@ -19,7 +19,7 @@
 
 # What will actually **ginit** do:
 
-- Initialise the local repository by running git init
+- Initialize the local repository by running git init
 - Create a remote repository, for example on Github or Bitbucket; typically by leaving the command-line and firing up a web browser
 - Add the remote
 - Create a .gitignore file
