@@ -7,7 +7,7 @@
 - **clui** – draws command line tables, gauges and spinners
 - **figlet** – creates ASCII art from text
 - **inquirer** – creates interactive command line user interface
-- **minimist** – parses argument options
+- **minimist** – parses command-line argument options
 - **preferences** – manage CLI application encrypted preferences
 
 ## Additionally, we’ll also be using the following:
@@ -16,3 +16,13 @@
 - **lodash** – JavaScript utility library
 - **simple-git** – runs Git commands in a Node.js application
 - **touch** – implementation of the *Nix touch command
+
+# What will actually **ginit** do:
+
+- Initialise the local repository by running git init
+- Create a remote repository, for example on Github or Bitbucket; typically by leaving the command-line and firing up a web browser
+- Add the remote
+- Create a .gitignore file
+- Add your project files
+- Commit the initial set of files
+- Push up to the remote repository
