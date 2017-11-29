@@ -12,9 +12,7 @@ const chalk = require('chalk');
 const clear = require('clear');
 const CLI = require('clui');
 const figlet = require('figlet');
-const Preferences = require('preferences');
 const Spinner = CLI.Spinner;
-const GitHubApi = require('github');
 const _ = require('lodash');
 const git = require('simple-git')();
 const touch = require('touch');
@@ -44,6 +42,9 @@ const cwd = utils.getNameCWD();
 
 
 // get user's GitHub credentials
-github.getCredentials().then((credentials)=> {
-  console.log(`Username : ${credentials.username}, Password : ${credentials.password}`)
+github.getToken().then((token)=> {
+  console.log(`Token : ${token}`)
+}).catch(err => {
+  console.log(chalk.red(`Failed - ${err} !`));
+  process.exit(1);
 });
