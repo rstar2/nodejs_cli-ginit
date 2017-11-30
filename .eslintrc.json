@@ -1,25 +1,24 @@
 {
+    
     "env": {
         "es6": true,
         "node": true
     },
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
     "extends": "eslint:recommended",
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "consistent-return":"error",
+        "indent"           : ["warn", 4,  { "SwitchCase": 1 }],
+        "semi"             : ["warn", "always"],
+        "quotes"           : ["error", "single"],
+        "no-else-return"   : "warn",
+        "space-unary-ops"  :"error",
+        "no-console"       : "off",
+        "no-var"           : "warn"
     }
 }
