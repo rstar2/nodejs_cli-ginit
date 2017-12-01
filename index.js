@@ -44,8 +44,8 @@ github.authenticate()
     .then(() => getRepoParams())
     .then(repoParams => github.createRepo(repoParams.name, repoParams.description, repoParams.ssh))
     .then(repoUrl => git.createGitignore().then(() => git.setup(repoUrl)))
-    .then(() => console.log(chalk.blue('Success!')))
     .catch(err => {
         console.log(chalk.red(`Failed - ${err} !`));
         process.exit(1);
-    });
+    })
+    .then(() => console.log(chalk.blue('Success!')));
