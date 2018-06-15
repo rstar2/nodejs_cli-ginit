@@ -17,7 +17,7 @@ const git = require('./lib/git');
 guiStart('Ginit');
 
 // check if a GIT repository already exists inside
-if (utils.isDirExists('.gitX')) {
+if (utils.isDirExists('.git')) {
     console.log(chalk.red('Already a git repository!'));
     process.exit(1);
 }
